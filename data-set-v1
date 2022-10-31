@@ -1,0 +1,77 @@
+public static List<Response> getResponse() {
+		List<Response> res = new ArrayList<Response>();
+
+		Response response1 = new Response();
+		response1.setApplicationName("rbac");
+		response1.setDuration("00:30:00");
+		response1.setEventStarted(LocalDateTime.parse("2022-10-19 09:00:00",formatter));
+		response1.setEventEnded(LocalDateTime.parse("2022-10-19 09:30:00",formatter));
+		response1.setEventStatus("down");
+		response1.setEventName("event-1");
+
+		Response response2 = new Response();
+		response2.setApplicationName("rbac");
+		response2.setDuration("00:15:00");
+		response2.setEventStarted(LocalDateTime.parse("2022-10-19 09:30:00",formatter));
+		response2.setEventEnded(LocalDateTime.parse("2022-10-19 09:45:00",formatter));
+		response2.setEventStatus("down");
+		response2.setEventName("event-2");
+		
+		Response response3 = new Response();
+		response3.setApplicationName("rbac");
+		response3.setDuration("00:15:00");
+		response3.setEventStarted(LocalDateTime.parse("2022-10-19 09:45:00",formatter));
+		response3.setEventEnded(LocalDateTime.parse("2022-10-19 10:00:00",formatter));
+		response3.setEventStatus("down");
+		response3.setEventName("event-3");
+		
+		Response response4 = new Response();
+		response4.setApplicationName("rbac");
+		response4.setDuration("00:45:00");
+		response4.setEventStarted(LocalDateTime.parse("2022-10-19 10:00:00",formatter));
+		response4.setEventEnded(LocalDateTime.parse("2022-10-19 10:45:00",formatter));
+		response4.setEventStatus("down");
+		response4.setEventName("event-4");
+		
+		Response response5 = new Response();
+		response5.setApplicationName("rbac");
+		response5.setDuration("00:15:00");
+		response5.setEventStarted(LocalDateTime.parse("2022-10-19 10:45:00",formatter));
+		response5.setEventEnded(LocalDateTime.parse("2022-10-19 10:55:00",formatter));
+		response5.setEventStatus("down");
+		response5.setEventName("event-5");
+		
+		Response response6 = new Response();
+		response6.setApplicationName("rbac");
+		response6.setDuration("00:15:00");
+		response6.setEventStarted(LocalDateTime.parse("2022-10-19 10:55:00",formatter));
+		response6.setEventEnded(LocalDateTime.parse("2022-10-19 11:00:00",formatter));
+		response6.setEventStatus("down");
+		response6.setEventName("event-6");
+		
+		Response response7 = new Response();
+		response7.setApplicationName("rbac");
+		response7.setDuration("02:00:00");
+		response7.setEventStarted(LocalDateTime.parse("2022-10-19 11:00:00",formatter));
+		response7.setEventEnded(LocalDateTime.parse("2022-10-19 12:10:00",formatter));
+		response7.setEventStatus("down");
+		response7.setEventName("event-7");
+		
+		Response response8 = new Response();
+		response8.setApplicationName("rbac");
+		response8.setDuration("02:00:00");
+		response8.setEventStarted(LocalDateTime.parse("2022-10-19 12:10:00",formatter));
+		response8.setEventEnded(LocalDateTime.parse("2022-10-19 12:30:00",formatter));
+		response8.setEventStatus("down");
+		response8.setEventName("event-8");
+
+		res.add(response1);
+		res.add(response2);
+		res.add(response3);
+		res.add(response4);
+		res.add(response5);
+		res.add(response6);
+		//res.add(response7);
+		//res.add(response8);
+		return res;
+	}
